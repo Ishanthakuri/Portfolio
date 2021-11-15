@@ -1,1 +1,1 @@
-Click me: vhttps://ishanthakuri.github.io/Portfolio/
+Click me: https://ishanthakuri.github.io/Portfolio/
