@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta name="description" content="Portfolia website" > 
+    <meta name="Keywords" content="HTML,CSS,Javascript" > 
+    <meta name="author" content="Ishan Singh Thakuri" > 
+    <meta http-equiv="refersh" content="2">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style/workstyle.css">
+    <link rel="stylesheet" href="../style/contact.css">
+    <style>
+        /*Internal css style for butoon*/
+        .hello{
+            height: 50px ;
+            width: 300px;
+            text-align : center;
+            background-color: black;
+            color: azure;
+           font-weight:bolder;
+        }
+        /*keepin background color*/
+        .forform{
+            background: url("../Images/contactbg.jpeg");
+            height:100%;
+            width:100%;
+            margin-bottom:-5%;  
+            margin-top: -50px;  
+            background-size:cover;
+        }
+    </style>
+    <!--External Javascript is called-->
+    <script src="../javaScript/work.js"></script>
+   
+ </head>
+    <body>
+       <!--This is the section for nav top bar where you can navigate all the webpages.-->
+        <section style="background-color: white;margin-top: -20px;">
+            <header align="center">
+               <h1><a href="Contact.html" class="top">CONTACT</a></h1>
+             </header>
+            <nav>
+                <table aria-label="navbar"style="width:40%; margin-left: 29%;">
+                    <tr>
+                        <th  id="menu" class="menu">
+                            <a href="../index.html">Home</a>
+                        </th>
+                        <th  id="menu" class="menu">
+                            <a href="Blog.html">Blog</a>
+                        </th>
+                        <th  id="menu" class="menu">
+                            <a href="Research.html">Research</a>
+                        </th>
+                        <th id="menu" class="menu"style="border-right:none;">
+                            <a href="CV.html">CV</a>
+                        </th>   
+                    </tr>
+                </table>
+            </nav><br><hr>
+        </section>
+        <section>
+            <header>
+                <p id="date" style="text-align:center;color:black"></p>
+                <h1 style="color:black;font-family:'Poppins',sans-serif; text-align:center;"> Welcome to Contact. Please, fill this Form.</h1>   
+            </header>
+            <div class="forform">
+                    <!--Using form tag-->
+               <form  name="messageForm" onsubmit="validation()">
+               <!--I use aria-label for table description 
+                and where tr represent table row, th represent table header, td represent table data-->
+               <table aria-label="formtable" class="second">
+                   <tr style=" border:1px solid rgb(8, 8, 8);">
+                   <!--I used inlined Css and inline block for giving margin on the bottom-->
+                       <th colspan="2" id="" class="second1"> Contact Form</th>  
+                   </tr>
+                   <!--Size belongs to width-->
+                   <tr>
+                       <td class="secondinner" colspan="2">
+                         <input  type="text" id="text2"  name="fname" placeholder="    Enter your Fullname" size="42" >
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="secondinner" colspan="2">
+                         <input type="text" id="text2"  name="email" placeholder="    Enter your email"  size="42">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="secondinner" colspan="2">
+                         <input type="text" id="text2"  name="date" placeholder="    Enter your Date of Birth"  size="42">
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="second">Rate us</td>
+                   </tr>
+                   <tr>
+                       <td colspan="2">
+                          <input type="radio" name="star">1 Star
+                          <input type="radio" name="star">2 Star
+                          <input type="radio" name="star">3 Star
+                          <input type="radio" name="star">4 Star
+                          <input type="radio" name="star">5 Star
+                       </td>
+                   </tr>
+                   <tr> 
+                          <td class="second">How can I help you?</td>
+                   </tr>
+                   <tr>
+                       <td class="second"><textarea placeholder="Message." name="message" rows="10" cols="44" clospan="2"></textarea>
+                       </td>
+                   </tr>
+                   <tr>
+                        <th id="hellooo"><button class ="hello" onsubmit="validation()" align ="center">SUBMIT</button></th>
+                  </tr>  
+                </table>
+            </form>
+           </div>
+       </section>
+       <footer class="footer">
+           <p style="color: white;text-align: center;">Follow me:</p>
+           <div style="background-color: black; display: flex; margin-left:40% ; margin-right:40%;">
+            
+               <a class="twitterflex" target="_blank" href="https://twitter.com/juniorthakuri"><img alt="twitlogo" class="logo"src="../Images/twitterlogo.png" >
+               </a>
+               <a  class="githubflex" target="_blank" href="https://github.com/Ishanthakuri"><img alt="gitlogo" class="logo"src="../Images/githublogo.png">
+               </a>
+               <a  class="mailflex"  target ="_blank" href="mailto:np01cp4s210339@islingtoncollege.edu.np"><img alt="pinlogo"class="logo" src="../Images/maillogo.png">
+               </a>
+               <a  class="linkedinflex" target="_blank" href="https://www.linkedin.com/in/ishan-thakuri-2a1475209/"><img alt="lilogo" class="logo"src="../Images/linkedinlogo.png">
+               </a>
+               <a  class="youtubeflex" target="_blank" href="https://www.youtube.com/channel/UCsxp-9YX4GX2wqyBkVpwWNA"><img alt="ytlogo" class="logo"src="../Images/youtubelogo.png">
+               </a>
+              
+           </div>
+               <table>
+               <tr>
+                <p style="letter-spacing: 7px;"> &copy; ISHAN  THAKURI</p>
+                <p>Powered by Visual Studio Code</p>   
+              </tr>
+           </table>
+        </footer>
+        <script type="text/javascript">
+        function date() 
+        {
+          document.getElementById("date").innerHTML = Date();//calling id.
+          setTimeout(date,1000);//it's keep changing number
+        }
+        date();
+        </script>
+    </body>
+</html>

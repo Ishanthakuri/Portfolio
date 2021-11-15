@@ -1,0 +1,69 @@
+/*External CSS for research.
+This is layout for 1st row in research web page*/
+body{
+    margin: auto;
+  
+    position: relative;
+}
+.rowR-1{
+    display:flex;
+    background-color:gray;
+    margin-top: 5%;
+    height: 7cm;
+    
+}
+.rowR-1 .leftcolumn{
+    flex:50%;
+    padding: 50px;
+   
+}
+.rowR-1 .rightcolumn{
+    flex:50%;
+    padding: 50px;
+    
+}
+/*This is layout for 2nd row in research web page*/
+.rowR-2{
+    display:flex;
+    background-color:gray;
+    margin-top: 5%;
+    height: 7cm;   
+}
+.rowR-2 .leftcolumn{
+    flex:50%;
+    padding: 50px;  
+}
+.rowR-2 .rightcolumn{
+    flex:50%;
+    padding: 50px;  
+}
+/*This is layout for 3rd row in research web page*/
+.rowR-3{
+    display:flex;
+    background-color:rgb(255, 255, 255);
+    margin-top: 5%;
+    height: 7cm;  
+}
+.rowR-3 .leftcolumn{
+    flex:50%;
+    padding: 50px;  
+}
+.rowR-3 .rightcolumn{
+    flex:50%;
+    padding: 50px;  
+}
+/*This is layout for 4th row in research web page*/
+.rowR-4{
+    display:flex;
+    background-color:gray;
+    margin-top: 5%;
+    height: 18cm;    
+}
+.rowR-4 .leftcolumn{
+    flex:50%;
+    padding: 50px; 
+}
+.rowR-4 .rightcolumn{
+    flex:50%;
+    padding: 50px;   
+}

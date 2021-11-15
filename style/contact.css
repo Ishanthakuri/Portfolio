@@ -1,0 +1,27 @@
+/*External CSS for contact.
+This is used for the form input*/
+.second {
+	width:30%;
+	background-color:rgba(239, 239, 243, 0.609);
+	margin:auto;
+	padding: 10px;
+    color:black;
+}
+.second1{
+    font-size:25px; 
+    display:inline-block;
+    text-align: center;   
+    margin-bottom: 40px;
+}
+.secondinner
+{
+    width:50px;
+    height:70px;
+   
+}
+/*This for input style. */
+#text2
+{
+    height: 60px; 
+    font-size: 14pt;
+}

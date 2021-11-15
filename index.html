@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Portfolia website" > 
+    <meta name="Keywords" content="HTML,CSS,Javascript" > 
+    <meta name="author" content="Ishan Singh Thakuri" > 
+    <meta http-equiv="refersh" content="2">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="./style/workstyle.css">
+    <link rel="stylesheet" href="./style/portfolio.css">
+    <style>
+        /*This hide the display of the image*/
+        .hide{
+         display: none;
+        } 
+        .art{
+          text-align:center;
+          background:linear-gradient(45deg,grey ,white);
+          padding-top: 20px;
+        }
+    </style>
+  </head>
+    <body>
+        <!--This is the section for nav top bar where you can navigate all the webpages.-->
+      <section  style="background-color:white;margin-top: -20px;">
+        <header  align="center">
+          <!--I used header and anchor tag-->
+          <h1><a href="Portfolio.html" class="top">PORTFOLIO</a> 
+          </h1> 
+        </header> 
+        <!--I used Inline Css for table style>-->
+         <nav>
+           <table aria-label="navbar" style="width:40%; margin-left: 29%;">
+               <tr>
+                   <th  id="" class="menu" >
+                       <a href="Html/Blog.html">Blog</a>
+                   </th>
+                   <th  id="" class="menu">
+                       <a href="Html/Research.html">Research</a>
+                   </th>
+                   <th id="" class="menu">
+                       <a href="Html/CV.html">CV</a>
+                   </th>
+                   <th id="" class="menu" style="border-right: none;">
+                       <a href="Html/Contact.html">Contact</a>
+                   </th>
+               </tr>
+           </table>
+         </nav><br><hr>
+        <!--nav end-->
+      </section> 
+        <!--This section is used for the 1st row-->  
+      <section style="background-color:rgb(245, 231, 206);margin-top: -8px; padding: 20px 50px">
+          <div class="roww">
+            <!--div starts for the leftcolumn class-->
+             <div class="leftcolumn">
+                <h1>Welcome <br> to <br> my
+                <span style="color: gray;">Portfolio Website</span>.</h1>
+              </div>
+            <!--div ends for the leftcolumn class-->
+            <!--div starts for the rightcolumn class-->
+              <div class="rightcolumn">
+                <h1 style="font-family:'Poppins',sans-serif;color:white;font-size: xx-large;">
+                MY NAME IS<br>ISHAN SINGH THAKURI</h1>
+              </div>
+            <!--div ends for the rightcoulmn class-->
+          </div>
+            <!--div ends for roww class-->
+        </section>
+        <!--This section is used for the 2nd row-->  
+        <section>
+        <!--div starts for the 2nd row-->
+        <div class="row2" style="margin-top: -5%;">
+         <!--div starts for the leftcolumn class-->
+        <div class="leftcolumn">
+            <img alt="" src="Images/IMG-2960.JPG" style="margin: 5%;border-radius:0cm; height: 10cm; width: 10cm;">
+        </div>
+        <!--div ends for the leftcolumn class-->
+        <!--div starts for the rightcolumn class-->
+        <div class="rightcolumn">
+           <p>Who am i</p>
+               <h1 style="margin-left: -5%; margin-top: -5%;"><mark>Hi there!</mark></h1>
+            <p style="margin: -18px -40px ">Currently,I am a 1st year student of computing at
+           <a href="https://islington.edu.np/">Islington College</a>.<br>I am a hard worker and listen 
+           to my parents and teachers every time <br> and I love to make Art, make new friends and travel.
+            </p>
+        </div>
+        <!--div ends for the rightcoulmn class-->
+       </section>
+       <section>
+         <div class="art">
+            <h1> My Artwork</h1>
+            <figure style="margin-left: 25%;">
+            <img alt="" id="n1" class="hide" src="Images/1547553848156.jpg" style="height: 12cm;width: 18cm;">
+            <img alt="" id="n2" class="hide" src="Images/IMG_1118.jpg" style="height: 15cm;width:18cm;">
+            </figure>
+            <br>
+            <button class="changebutton" onclick="change()">Change</button><br><br>
+         </div>
+       </section>
+      </section>
+        <section>
+        <div style="text-align:center;background:rgb(243, 236, 224) ;padding-top: 20px;margin-bottom: -4%;" >
+             <h1> Quotes of the Day.</h1>
+            <h1 id="next">"It has become appallingly obvious that our technology has exceeded our humanity." — Albert Einstein.</h1>
+            <button class="changebutton" onclick="another()">Another Quotes</button><br><br>
+        </div>
+        </section>
+      <footer class="footer">
+            <p style="color: white;text-align: center;">Follow me:</p>
+         <div style="background-color: black; display: flex; margin-left:40% ; margin-right:40%;">
+
+            <a class="twitterflex" target="_blank" href="https://twitter.com/juniorthakuri"><img alt="" class="logo"src="Images/twitterlogo.png" >
+            </a>
+            <a class="githubflex" target="_blank" href="https://github.com/Ishanthakuri"><img alt="" class="logo"src="Images/githublogo.png">
+            </a>
+            <a  class="mailflex"  target ="_blank" href="mailto:np01cp4s210339@islingtoncollege.edu.np"><img alt="pinlogo"class="logo" src="Images/maillogo.png">
+            </a>
+            <a class="linkedinflex" target="_blank" href="https://www.linkedin.com/in/ishan-thakuri-2a1475209/"><img alt="" class="logo"src="Images/linkedinlogo.png">
+            </a>
+            <a class="youtubeflex" target="_blank" href="https://www.youtube.com/channel/UCsxp-9YX4GX2wqyBkVpwWNA"><img alt="" class="logo"src="Images/youtubelogo.png">
+            </a>
+
+         </div>
+         <table >
+              <tr>
+               <p style="letter-spacing: 7px;"> &copy; ISHAN  THAKURI</p>
+               <p>Powered by Visual Studio Code</p>
+             </tr>
+         </table>
+      </footer>
+        <!-- This is the the internal Javascript where function is called to change the picture-->
+        <script>
+          function another()
+          {
+            var quote = document.getElementById("next")//getting id next in header
+            quote.innerHTML = "The computer was born to solve problems that did not exist before.— Bill Gates";//changing the content.
+          }
+        </script>
+      <!--Giving source for external javascript.-->
+      <script src="./javaScript/work.js"></script>
+    </body>
+</html>

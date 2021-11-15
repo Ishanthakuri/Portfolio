@@ -1,0 +1,50 @@
+/*External Css for portfolio.
+ /*This Css is for 1st row used as a flex in the layout*/
+ .roww{
+    display: flex;
+    padding: 10px;
+    padding-left: 20px;
+}
+.roww .leftcolumn{
+    flex:40%;       
+}
+.roww .rightcolumn{
+    display: relative;
+    flex:60%;
+    padding-left: 50px;
+    padding-right: 10px;
+    background-color: white;
+    background:url("../Images/IMG_1704.jpg");
+    margin: -10px; 
+    background-size: 100% 100% ;
+   }
+.roww .leftcolumn  :hover
+{
+    color:grey;
+}  
+/*This Css is for 2nt row used as a flex in the layout*/
+.row2
+{
+    display: flex;
+    background-color:rgb(243, 236, 224);   
+}
+.row2 .leftcolumn
+{
+    flex: 50%;
+}
+.row2 .rightcolumn
+{
+    flex:50%;
+    margin-top: 5%;
+    font-family:'Poppins',sans-serif;
+}
+ /*This is called for button*/
+.changebutton
+{
+    background-color: black;
+    color:white;
+    border-radius: 15px;
+    height: 7vh;
+    width: 17vh;
+    border: 3px solid white;
+}  
